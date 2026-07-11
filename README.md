@@ -1,60 +1,78 @@
-# VxPanel
+VxPanel
 
-VxPanel is a premium, next-generation Minecraft server management panel designed for high performance, ease of use, and a sleek aesthetic interface.
+VxPanel is a modern Minecraft server management panel built with Node.js. It provides an intuitive interface for managing Minecraft servers, users, files, and system settings from a single dashboard.
 
-## Installation & Setup
+Requirements
 
-To get started with VxPanel locally, follow these steps:
+- Node.js 20 or later
+- npm
+- Supported operating system: Linux, Windows, or macOS
 
-1. **Clone the repository** (or download the source):
-   \`\`\`bash
-   git clone https://github.com/therynzo/VxPanel \`\`\`
-  \`\`\` cd vxpanel
-   \`\`\`
-   *(Note: Remember to link your GitHub repository here once you push the code!)*
+Installation
 
-2. **Install dependencies**:
-   \`\`\`bash
-   npm install
-   \`\`\`
+Clone the repository:
 
-3. **Build the application**:
-   \`\`\`bash
-   npm run build
-   \`\`\`
+git clone https://github.com/therynzo/VxPanel.git
+cd VxPanel
 
-4. **Start the server**:
-   \`\`\`bash
-   npm start
-   \`\`\`
-   *(Alternatively, run \`npm run dev\` for the development server).*
+Install dependencies:
 
-   **The website/panel is hosted at http://localhost:7777**
+npm install
 
-## Creating an Admin User
+Build the project:
 
-To easily create a new admin user from your terminal, use the provided custom command:
+npm run build
 
-\`\`\`bash
+Start the application:
+
+npm start
+
+For development:
+
+npm run dev
+
+The panel will be available at:
+
+http://localhost:7777
+
+Create an Admin User
+
+Before logging in, create an administrator account:
+
 npm run createuser
-\`\`\`
 
-Follow the prompts to enter a username, email, and password. This command securely hashes your password and creates a master admin account so you can log in to the panel immediately.
+Follow the prompts to enter:
 
-## Features
+- Username
+- Email
+- Password
 
-- **Minecraft Server Management:** Full control over your Minecraft servers (Paper, Purpur, Fabric).
-- **Real-time Console & Analytics:** Live terminal logs and resource utilization graphs (CPU, RAM, Disk).
-- **File Manager:** Built-in web file manager for server files.
-- **Admin Dashboard:** Total administration of servers, nodes, users, and global settings.
-- **Modern UI:** Premium design with customizable themes and responsive layouts.
+Available Commands
 
-## Default Admin Account
+npm install
 
-Upon first start, an administrative account is automatically generated:
-- **CreateUser:** bash npm createuser
+npm run build
 
-> **Security Warning:** Please change the default admin credentials immediately after your first login!
+npm start
 
-## License
-© 2026 VxPanel. All rights reserved.
+npm run dev
+
+npm run createuser
+
+Features
+
+- Minecraft server management
+- Server console
+- File manager
+- User management
+- Admin dashboard
+- Resource monitoring
+- Theme customization
+- Responsive interface
+- Secure authentication
+
+License
+
+Copyright © 2026 VxPanel.
+
+All rights reserved.
