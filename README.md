@@ -1,102 +1,85 @@
-VxPanel
+# VxPanel
 
-VxPanel is a modern Minecraft Server Management Panel built with Node.js. It provides a clean, fast, and secure interface for managing Minecraft servers, users, files, and panel settings.
+VxPanel is a premium, next-generation Minecraft server management panel designed for high performance, ease of use, and a sleek aesthetic interface.
 
----
+## Installation & Setup
 
-Requirements
+To get started with VxPanel locally, follow these steps step-by-step:
 
-- Node.js 20+
-- npm
-- Linux, Windows, or macOS
+### 1. Prerequisites
+Ensure you have the following installed on your system:
+- **Node.js** (v18 or higher recommended)
+- **Git**
 
----
+### 2. Clone the Repository
+\`\`\`bash
+git clone <YOUR_GITHUB_REPO_URL_HERE>
+cd vxpanel
+\`\`\`
+*(Note: Replace the URL with your actual GitHub repository URL once uploaded)*
 
-Installation
-
-1. Clone the Repository
-
-git clone https://github.com/therynzo/VxPanel.git
-cd VxPanel
-
-2. Install Dependencies
-
+### 3. Install Dependencies
+Install all required packages, including PM2 for process management:
+\`\`\`bash
 npm install
+npm install -g pm2
+\`\`\`
 
-3. Build the Project
-
+### 4. Build the Panel
+Compile the TypeScript and React frontend:
+\`\`\`bash
 npm run build
+\`\`\`
 
-4. Start the Panel
-
-npm start
-
-Development Mode
-
-npm run dev
-
----
-
-Panel URL
-
-http://localhost:7777
-
----
-
-Create an Administrator
-
-Run the following command:
-
+### 5. Create an Admin Account
+Initialize the database and create your master administrator account using the custom command:
+\`\`\`bash
 npm run createuser
+\`\`\`
+Follow the prompts to set your username, email, and password.
 
-Then enter:
+### 6. Configure the Port (Optional but recommended for localhost:7777)
+By default, the panel runs on port \`3000\`. If you want to run it on port \`7777\`, open the \`ecosystem.config.cjs\` file and add \`PORT: 7777\` to the \`env\` block like this:
+\`\`\`javascript
+module.exports = {
+  apps: [
+    {
+      name: 'vxpanel',
+      script: 'dist/server.cjs',
+      env: {
+        NODE_ENV: 'production',
+        PORT: 7777
+      }
+    }
+  ]
+};
+\`\`\`
 
-- Username
-- Email
-- Password
-
----
-
-Available Commands
-
-Install Dependencies
-
-npm install
-
-Build Project
-
-npm run build
-
-Start Production Server
-
+### 7. Start the Server
+Start the panel using PM2:
+\`\`\`bash
 npm start
+\`\`\`
+*(This will run \`pm2 start ecosystem.config.cjs\` in the background or foreground depending on configuration).*
 
-Start Development Server
-
-npm run dev
-
-Create Admin User
-
-npm run createuser
+You can now access your panel at: **http://localhost:3000** (or **http://localhost:7777** if you changed the port).
 
 ---
 
-Features
+## Updating the Panel from GitHub
+Whenever you push new changes to your GitHub repository, you can update your live server easily with a single command:
+\`\`\`bash
+npm run update
+\`\`\`
+This custom command will automatically pull the latest files from Git, install dependencies, rebuild the panel, and restart the PM2 process!
 
-- Minecraft Server Management
-- Server Console
-- File Manager
-- User Management
-- Admin Dashboard
-- Resource Monitoring
-- Theme Customization
-- Secure Authentication
-- Responsive Interface
+## Features
 
----
+- **Minecraft Server Management:** Full control over your Minecraft servers (Paper, Purpur, Fabric).
+- **Real-time Console & Analytics:** Live terminal logs and resource utilization graphs (CPU, RAM, Disk).
+- **File Manager:** Built-in web file manager for server files.
+- **Admin Dashboard:** Total administration of servers, nodes, users, and global settings.
+- **Modern UI:** Premium design with customizable themes and responsive layouts.
 
-License
-
-Copyright © 2026 VxPanel
-
-All Rights Reserved.
+## License
+© 2026 VxPanel. All rights reserved.

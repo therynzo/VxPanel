@@ -5,7 +5,7 @@ import crypto from "crypto";
 import { createServer as createViteServer } from "vite";
 import { Server, ServerStatus, User, Node, Allocation, Egg, EggGroup, PanelSettings, APIKey, ServerFile } from "./src/types";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DATA_DIR = path.join(process.cwd(), "data");
 const SERVERS_DIR = path.join(process.cwd(), "servers");
 const DB_FILE = path.join(DATA_DIR, "db.json");
@@ -1478,7 +1478,7 @@ Health check: All engines operating in green range.`;
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`VxPanel server active and listening on http://0.0.0.0:${PORT}`);
+    console.log(`VxPanel server active and listening on http://localhost:${PORT}`);
   });
 }
 
