@@ -52,9 +52,7 @@ Follow the prompts to enter a username, email, and password. This command secure
 ## Default Admin Account
 
 Upon first start, an administrative account is automatically generated:
-- **Email:** therynzo@vxpanel.io
-- **Password:** Rynzo@5646#
-- **Username:** TheRynzo
+- **CreateUser:** bash npm createuser
 
 > **Security Warning:** Please change the default admin credentials immediately after your first login!
 
