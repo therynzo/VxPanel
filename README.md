@@ -1,78 +1,102 @@
 VxPanel
 
-VxPanel is a modern Minecraft server management panel built with Node.js. It provides an intuitive interface for managing Minecraft servers, users, files, and system settings from a single dashboard.
+VxPanel is a modern Minecraft Server Management Panel built with Node.js. It provides a clean, fast, and secure interface for managing Minecraft servers, users, files, and panel settings.
+
+---
 
 Requirements
 
-- Node.js 20 or later
+- Node.js 20+
 - npm
-- Supported operating system: Linux, Windows, or macOS
+- Linux, Windows, or macOS
+
+---
 
 Installation
 
-Clone the repository:
+1. Clone the Repository
 
 git clone https://github.com/therynzo/VxPanel.git
 cd VxPanel
 
-Install dependencies:
+2. Install Dependencies
 
 npm install
 
-Build the project:
+3. Build the Project
 
 npm run build
 
-Start the application:
+4. Start the Panel
 
 npm start
 
-For development:
+Development Mode
 
 npm run dev
 
-The panel will be available at:
+---
+
+Panel URL
 
 http://localhost:7777
 
-Create an Admin User
+---
 
-Before logging in, create an administrator account:
+Create an Administrator
+
+Run the following command:
 
 npm run createuser
 
-Follow the prompts to enter:
+Then enter:
 
 - Username
 - Email
 - Password
 
+---
+
 Available Commands
+
+Install Dependencies
 
 npm install
 
+Build Project
+
 npm run build
+
+Start Production Server
 
 npm start
 
+Start Development Server
+
 npm run dev
+
+Create Admin User
 
 npm run createuser
 
+---
+
 Features
 
-- Minecraft server management
-- Server console
-- File manager
-- User management
-- Admin dashboard
-- Resource monitoring
-- Theme customization
-- Responsive interface
-- Secure authentication
+- Minecraft Server Management
+- Server Console
+- File Manager
+- User Management
+- Admin Dashboard
+- Resource Monitoring
+- Theme Customization
+- Secure Authentication
+- Responsive Interface
+
+---
 
 License
 
-Copyright © 2026 VxPanel.
+Copyright © 2026 VxPanel
 
-All rights reserved.
+All Rights Reserved.
