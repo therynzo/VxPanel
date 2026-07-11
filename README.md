@@ -8,8 +8,8 @@ To get started with VxPanel locally, follow these steps:
 
 1. **Clone the repository** (or download the source):
    \`\`\`bash
-   git clone <YOUR_GITHUB_REPO_URL_HERE>
-   cd vxpanel
+   git clone https://github.com/therynzo/VxPanel \`\`\`
+  \`\`\` cd vxpanel
    \`\`\`
    *(Note: Remember to link your GitHub repository here once you push the code!)*
 
