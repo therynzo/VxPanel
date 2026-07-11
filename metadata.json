@@ -1,0 +1,6 @@
+{
+  "name": "VxPanel",
+  "description": "Premium, responsive, and modern Minecraft Server Management Panel with an interactive live console, file manager, user database, custom themes, and full admin tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
